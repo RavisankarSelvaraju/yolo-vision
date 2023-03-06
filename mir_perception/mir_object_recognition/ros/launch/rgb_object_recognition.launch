@@ -12,7 +12,7 @@
       <param name="classifier" value="$(arg classifier)" type="str" />
       <param name="dataset" value="$(arg dataset)" type="str" />
       <param name="model_dir" value="$(arg model_dir)" type="str" />
-      <remap from="~input/images" to="/mir_perception/multimodal_object_recognition/recognizer/rgb/input/images" />
+      <remap from="~input/images" to="/camera/color/image_raw" />
       <remap from="~output/object_list" to="/mir_perception/multimodal_object_recognition/recognizer/rgb/output/object_list"/>
     </node>
   </group>
